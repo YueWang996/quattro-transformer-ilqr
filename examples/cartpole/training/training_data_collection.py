@@ -18,7 +18,7 @@ from quattro_ilqr_tf.transformer_ilqr import *
 
 
 def run_cartpole_sim(
-    model_path: str = "./asset/cartpole.xml",
+    model_path: str = "../../asset/cart_pole/cartpole.xml",
     use_gui: bool = True,
     sweep_positions: np.ndarray = None,
     sweep_angles: np.ndarray = None,
@@ -244,7 +244,7 @@ def run_task(pos_range, angles_to_try, flush_interval):
 
     print(f"Process {os.getpid()}: Running simulation for positions from {pos_start:.3f} to {pos_end:.3f}", flush=True)
     _ = run_cartpole_sim(
-        model_path="examples/asset/cart_pole/cartpole.xml",
+        model_path="../../asset/cart_pole/cartpole.xml",
         use_gui=False,  # Recommended to disable GUI in parallel runs
         sweep_positions=pos_range,
         sweep_angles=angles_to_try,
