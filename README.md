@@ -2,6 +2,7 @@
 [![Python Version](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/downloads/release/python-310/)
 
 
+
 # Quattro: Transformer-Accelerated iterative Linear Quadratic Regulator (iLQR)
 
 Quattro is an open-source framework designed to enhance the efficiency of iterative Linear Quadratic Regulators (iLQR) through the innovative integration of Transformer models. By accelerating intermediate computations in iLQR algorithms, Quattro significantly improves real-time optimal control capabilities for nonlinear robotic systems.
@@ -88,11 +89,13 @@ To train the Transformer for iLQR acceleration:
 ## Citation
 Please cite this project if you find it useful:
 ```
-@article{wang2025quattro,
-  title={Quattro: Transformer-Accelerated Iterative Linear Quadratic Regulator Framework for Fast Trajectory Optimization},
+@inproceedings{wang2025quattro,
+  title={Quattro: transformer-accelerated iterative linear quadratic regulator framework for fast trajectory optimization},
   author={Wang, Yue and Wang, Haoyu and Li, Zhaoxing},
-  journal={arXiv preprint arXiv:2504.01806},
-  year={2025}
+  booktitle={2025 IEEE 64th Conference on Decision and Control (CDC)},
+  pages={6629--6636},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
